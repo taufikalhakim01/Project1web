@@ -1,0 +1,9 @@
+const windDirection = document.querySelector('.wind-direction');
+
+function setWindDirection(direction) {
+  windDirection.setAttribute('data-direction', direction);
+  windDirection.querySelector('.label').innerHTML = direction;
+}
+
+// Example usage:
+setWindDirection('N');
